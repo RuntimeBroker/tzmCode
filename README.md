@@ -1,9 +1,11 @@
+## IDA特征码提取插件
+
 ## 文件介绍
 
 tzmCode.py
 
 ~~~
- 升级成插件IDA9 原来是python2写的 现在升级到python39
+ 升级成插件IDA Pro 9 原来是python2写的 现在升级到python39
 ~~~
 
 searchCode.h
@@ -36,7 +38,7 @@ PLONG_PTR funAddr = searchCode("ntkrnlpa.exe", "8B*****85C974*8D7D*ABAB894D*8D45
 第1个参数：模块名字
 第2个参数：特征码
 第3个参数：函数在哪个节，这填写节的名字
-第4个参数：距离函数开头的offset 这里是填写成负的偏移
+第4个参数：距离当前函数起始位置的offset 这里是填写成负的偏移
 ~~~
 
 ![image-20250112174007339](https://pic.gitlab.cx/gh/RuntimeBroker/pic-bed/img/2025/01/12/JwIBed65ihR8oWMS5YBP1736674807516.png)
